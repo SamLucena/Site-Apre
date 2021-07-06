@@ -1,0 +1,146 @@
+:root{
+    --var-fonte-padrao:'Roboto';
+    --var-cor-footer:#0049B0;
+    --var-cor-profession:#254A7D;
+    --var-cor-footer:#002963;
+}
+
+*{
+    margin:0;
+    font-family: var(--var-fonte-padrao);
+}
+body{
+    background-color: rgb(0, 0, 20);
+}
+header{
+    border-radius: 75px 75px 0px 0px;
+    margin-top: 100px;
+    background-color: white;
+    max-width: 900px;
+    display: block;
+    margin: 100px auto 0px auto;
+}
+h1{
+    text-align: center;
+}
+main, footer, header{
+    box-shadow: 10px 10px 20px 5px white;
+}
+main{
+    max-width: 900px;
+    background-color: white;
+    margin:auto;
+}
+.description{
+    margin-left: 10;
+    text-align: justify;
+    display: inline-block;  
+    max-width: 350px;
+    font-size: normal;
+    padding: 5px;
+    padding-left: 30px;
+    margin-bottom:20px;
+}
+strong{
+    color:#007BFF;
+}
+.profession{
+    background-color: #007BFF;
+    display: inline-block;
+    padding:15px 70px 15px 70px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color:white;
+    font-size: normal;
+    margin-left: 28px;
+    
+}
+img{
+    transform: translateY(40%);
+    object-fit: cover;
+    width: 125px;
+    margin-left:35%;
+    border:5px double var(--var-cor-footer);
+    border-radius: 70px;
+}
+aside{
+    line-height: 40px;
+    background-color: white;
+    display:block;
+    border-top: 5px solid var(--var-cor-footer);
+    padding-bottom:40px
+}
+footer{
+    text-align: center;
+    max-width: 900px;
+    margin:auto;
+    background-color: var(--var-cor-footer);
+    padding-top:10px;
+    padding-bottom:10px;
+    color:white;
+    font-weight: bold;
+    border-radius: 0px 0px 75px 75px;
+}
+.icFace{
+    list-style: url("../images/icons/icFacebook.svg");
+}
+.icInsta{
+    list-style: url("../images/icons/icInstagram.svg");
+}
+.icLinke{
+    list-style: url("../images/icons/icLinkedin.svg");
+}
+.icTwit{
+    list-style: url("../images/icons/icTwitter.svg");
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--var-cor-profession);
+}
+a:hover{
+    color:black;
+    transition:.5s;
+}
+.icCopy{
+    display:inline-block;
+    width: 20px; 
+}
+@media (max-width: 823px){
+    img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: none;
+    }
+    .profession{
+        max-width: 100%;
+        display:block;
+        margin: 0;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .description{
+        max-width: none;
+        padding:20px;
+    }
+    main, footer, header{
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 400px){
+    main, footer, header{
+        max-width: 280px;
+    }
+    .description{
+        text-align: justify;
+        padding: 10px;
+    }
+}
+@media (min-width:824px){
+    .icCopy{
+        margin-left: auto;
+    }
+}
+
