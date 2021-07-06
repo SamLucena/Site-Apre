@@ -132,7 +132,7 @@ a:hover{
 
 @media (max-width: 400px){
     main, footer, header{
-        max-width: 300px;
+        max-width: 350px;
     }
     .description{
         text-align: justify;
